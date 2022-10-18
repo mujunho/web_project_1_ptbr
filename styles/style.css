@@ -95,8 +95,6 @@
   font-weight: normal;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 .two-columns__main-text {
@@ -127,7 +125,7 @@
 }
 
 .table {
-  margin:60px auto;
+  margin:60px 0;
   flex-wrap: wrap;
   display: flex;
   width: 1100px;
@@ -135,39 +133,43 @@
   list-style: none;
   row-gap: 60px;
   padding: 0;
-  z-index: 3;
+  z-index: 4;
 }
 
 .table__heading {
   line-height: 1.15px;
   font-size: 24px;
   font-weight: bold;
+  margin: 0;
 }
 
 .table__text {
   margin-top: 20px;
+  margin-bottom: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin-bottom: 0;
 }
 
 .table__cell {
   width: 250px;
 }
 
-.table-theme_dark {
-  width: 1100px;
-  background-color: #000000;
-  z-index: 3;
+.table_theme_dark {
+  margin-top: 90px;
+  row-gap: 80px;
 }
 
 .table__heading_theme_dark {
   width: 250px;
+  color: white;
 }
 
 .table__text_theme_dark {
   margin: 20px 0 0;
   z-index: 3;
+  color: white;
 }
 
 .table__cell_theme_dark {
@@ -223,7 +225,6 @@
   align-items: center;
   height: 790px;
   background-color: #000000;
-  color: #F2F2F2;
   overflow: hidden;
   position: relative;
 }
@@ -242,6 +243,8 @@
   font-size: 60px;
   font-weight: bold;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .section-subtitle {
@@ -256,12 +259,14 @@
 }
 
 .section__title_theme_dark {
-  justify-content: center;
+  margin-bottom: 0;
   margin-top: 90px;
+  color: white;
 }
 
 .section__subtitle_theme_dark {
-  margin: 20px auto;
+  margin: 20px 0;
+  color: white;
 }
 
 .logo_place_footer {
@@ -315,9 +320,9 @@
  row-gap: 20px;
 }
 
-.footer__link {
+.footer__column-link {
 text-decoration: none;
-color: #2F80ED;
+color: white;
 }
 
 .footer__social-icons {
